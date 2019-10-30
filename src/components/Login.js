@@ -7,7 +7,6 @@ class Login extends React.Component {
   state = {
     username: "",
     password: "",
-    requestSent: null,
     error: null
   };
 
@@ -27,7 +26,6 @@ class Login extends React.Component {
                 }
               );
               await setUser(response.data);
-              this.setState({ requestSent: true });
             } catch (error) {
               console.log(error.message);
               this.setState({ error: error });
