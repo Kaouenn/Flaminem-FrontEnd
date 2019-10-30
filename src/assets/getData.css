@@ -52,12 +52,12 @@
 }
 
 .client .name {
-  text-transform: capitalize;
+  text-transform: uppercase;
   width: 50%;
   margin-left: 10%;
 }
 .client .lastName {
-  text-transform: uppercase;
+  text-transform: capitalize;
   width: 50%;
   margin-left: 0%;
 }

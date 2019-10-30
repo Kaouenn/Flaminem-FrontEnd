@@ -33,10 +33,10 @@ class GetData extends React.Component {
           >
             <h3 className="name">
               {" "}
-              <span>Nom :</span> {client.name}
+              <span>Nom :</span> {client.lastName}
             </h3>
             <h3 className="lastName">
-              <span>Prénom :</span> {client.lastName}
+              <span>Prénom :</span> {client.name}
             </h3>
           </li>
         );
