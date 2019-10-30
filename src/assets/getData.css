@@ -80,7 +80,7 @@
   font-weight: 300;
 }
 
-.address-selected > div span {
+.address-selected > div b {
   margin-right: 15px;
   font-size: 20px;
   font-weight: 500;

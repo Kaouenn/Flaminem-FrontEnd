@@ -44,3 +44,39 @@ form > h2 {
   font-size: 18px;
   border-radius: 5px;
 }
+
+.error {
+  height: 60%;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: crimson;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error > h2 {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 200;
+  color: white;
+}
+
+.error > h2 > span {
+  font-weight: 500;
+}
+
+.button-error {
+  margin-top: 30px;
+  background: white;
+  padding: 10px 30px;
+  color: crimson;
+  font-weight: 500;
+  font-size: 20px;
+  border-radius: 5px;
+}

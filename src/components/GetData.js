@@ -32,7 +32,6 @@ class GetData extends React.Component {
             }}
           >
             <h3 className="name">
-              {" "}
               <span>Nom :</span> {client.lastName}
             </h3>
             <h3 className="lastName">
@@ -49,7 +48,12 @@ class GetData extends React.Component {
     return (
       <MainLayout user={user} setUser={setUser}>
         <div className="getdata">
-          <h2>Liste de clients 🗄</h2>
+          <h2>
+            Liste de clients
+            <span role="img" aria-label="0">
+              🗄
+            </span>
+          </h2>
           <ul className="clients-list">{this.rederClients()}</ul>
           <div
             className={
@@ -61,7 +65,13 @@ class GetData extends React.Component {
               <div>
                 <h2>Détails client:</h2>
                 <p>
-                  <span>Adresse 🏠:</span>
+                  <b>
+                    Adresse
+                    <span role="img" aria-label="1">
+                      🏠
+                    </span>
+                    :
+                  </b>
                   {this.state.clientAdrress}
                 </p>
               </div>
@@ -89,6 +99,7 @@ class GetData extends React.Component {
       dataClients: response.data,
       isLoading: false
     });
+    window.scrollTo(0, 0);
   };
 }
 
