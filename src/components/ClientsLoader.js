@@ -5,11 +5,26 @@ const ClientsLoader = () => {
   return (
     <div className="clientsLoader">
       <ul>
-        <li className="li-Loader"></li>
-        <li className="li-Loader"></li>
-        <li className="li-Loader"></li>
-        <li className="li-Loader"></li>
-        <li className="li-Loader"></li>
+        <li className="li-Loader">
+          <p></p>
+          <p></p>
+        </li>
+        <li className="li-Loader">
+          <p></p>
+          <p></p>
+        </li>
+        <li className="li-Loader">
+          <p></p>
+          <p></p>
+        </li>
+        <li className="li-Loader">
+          <p></p>
+          <p></p>
+        </li>
+        <li className="li-Loader">
+          <p></p>
+          <p></p>
+        </li>
       </ul>
     </div>
   );

@@ -4,6 +4,8 @@
 }
 
 .li-Loader {
+  display: flex;
+  align-items: center;
   width: 100%;
   height: 3.7rem;
   margin: 0;
@@ -15,4 +17,11 @@
 
 .li-Loader:nth-child(even) {
   background: #efefef;
+}
+
+.li-Loader p {
+  width: 30%;
+  background: #949494;
+  height: 1.7rem;
+  margin-left: 9%;
 }
