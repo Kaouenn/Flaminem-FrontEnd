@@ -6,24 +6,24 @@ const ClientsLoader = () => {
     <div className="clientsLoader">
       <ul>
         <li className="li-Loader">
-          <p></p>
-          <p></p>
+          <p />
+          <p />
         </li>
         <li className="li-Loader">
-          <p></p>
-          <p></p>
+          <p />
+          <p />
         </li>
         <li className="li-Loader">
-          <p></p>
-          <p></p>
+          <p />
+          <p />
         </li>
         <li className="li-Loader">
-          <p></p>
-          <p></p>
+          <p />
+          <p />
         </li>
         <li className="li-Loader">
-          <p></p>
-          <p></p>
+          <p />
+          <p />
         </li>
       </ul>
     </div>
