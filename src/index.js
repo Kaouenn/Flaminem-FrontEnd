@@ -1,12 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import Header from "./components/Header";
+import Login from "./components/Login";
+import GetData from "./components/GetData";
+import Cookies from "js-cookie";
+import "./assets/index.css";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+class App extends React.Component {
+  state = {
+    user: Cookies.get("userProfile")
+      ? JSON.parse(Cookies.get("userProfile"))
+      : null
+  };
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+  setUser = user => {
+    Cookies.set("userProfile", JSON.stringify(user));
+    this.setState({ user });
+  };
+
+  render = () => {
+    const pageCommonProps = {
+      user: this.state.user,
+      setUser: this.setUser
+    };
+    return (
+      <div className="App">
+        <Header />
+        {this.state.user === null ? (
+          <Login {...pageCommonProps} />
+        ) : (
+          <GetData {...pageCommonProps} />
+        )}
+      </div>
+    );
+  };
+}
+
+ReactDOM.render(<App />, document.getElementById("root"));

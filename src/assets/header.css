@@ -1,0 +1,17 @@
+.header {
+  margin: auto;
+  background: crimson;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header > h1 {
+  color: white;
+}
+
+.header > h1 > span {
+  font-style: italic;
+  font-weight: 300;
+}
