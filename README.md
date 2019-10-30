@@ -33,7 +33,7 @@ Use `npm start`to launch the website.
 
 You can also visit the demo website :
 
-https://budget-web-app.herokuapp.com/
+https://flaminem-frontend.francoislaval.now.sh/
 
 ## Features
 
