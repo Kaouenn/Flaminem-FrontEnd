@@ -12,8 +12,7 @@ class GetData extends React.Component {
     isLoading: true
   };
 
-  renderClientAddress = () => {};
-  rederClients = () => {
+  renderClients = () => {
     if (this.state.isLoading === true) {
       return <ClientsLoader />;
     } else {
@@ -54,7 +53,7 @@ class GetData extends React.Component {
               🗄
             </span>
           </h2>
-          <ul className="clients-list">{this.rederClients()}</ul>
+          <ul className="clients-list">{this.renderClients()}</ul>
           <div
             className={
               "render-address " +
